@@ -1,0 +1,142 @@
+/* Reset some default styles */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply a background color and default font */
+body {
+    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Center the content on the page */
+body {
+    display: flex;
+    flex-direction: column; /* Ensure content is stacked vertically */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Style the container */
+#accordionExample {
+    width: 80%;
+}
+
+/* Style the accordion items */
+.accordion-item {
+    margin-bottom: 10px;
+}
+
+/* Style the task input and button */
+.task-input {
+    width: 60%;
+    padding: 8px;
+    margin-right: 5px;
+    
+}
+
+/* Style the add task button */
+.task-list button {
+    padding: 8px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Style the task list */
+.tasks {
+    list-style-type: none;
+    padding: 0;
+
+  
+}
+
+/* Style each task item */
+.tasks li {
+    background-color: white;
+    border: 1px solid #ccc;
+    margin: 5px 0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+      
+}
+
+/* Style completed tasks */
+.tasks li.completed {
+    text-decoration: line-through;
+    opacity: 0.7;
+}
+
+/* Style the Party Bomb message */
+.party-bomb {
+    display: none;
+    color: red;
+    font-size: 18px;
+}
+
+/* Style the date display */
+.date {
+    margin-top: 10px;
+}
+
+/* Responsive design using media queries */
+@media (max-width: 768px) {
+    .task-input {
+        width: 50%;
+    }
+
+    /* Move date below h1 on mobile */
+    .date {
+        order: 1; /* Change the order to display below h1 */
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .task-input {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .task-list button {
+        width: 100%;
+    }
+}
+
+/* Additional styles can be added based on your preferences */
+
+h1{
+    font-family:monospace;
+    font-family: "Bungee", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+  
+  .last{
+    text-decoration: none;
+  }
+
+  .cs{
+    
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+  }
+
+img{
+    height: 50px;
+    box-shadow: #007bff 30px;
+    border-radius: 150px;
+background: #c9f8e7;
+box-shadow: inset 5px 5px 10px #677e76,
+            inset -5px -5px 10px #ffffff;
+}
+  

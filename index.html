@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Fugaz+One&family=Lemon&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+   
+<body>
+ 
+    <h1>To-Do Lists</h1>
+    <span id="current-date"></span>
+
+    <div class="accordion" id="accordionExample">
+
+        <!-- Work Out Accordion Item -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  <p class="cs">  Work Out</p>
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <div class="task-list" data-category="work-out">
+                        <input type="text" class="task-input" placeholder="Enter task" onkeypress="handleKeyPress(event, 'your-category')">
+
+                        <button onclick="addTask('work-out')">Add Task</button>
+                        <ul class="tasks"><code></code></ul>
+                        <p class="party-bomb" style="display: none">🎉 Party Bomb! All tasks completed! 🎉</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Office Accordion Item -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                   <p class="cs"> Office</p>
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <div class="task-list" data-category="office">
+                        <input type="text" class="task-input" placeholder="Enter task">
+                        <button onclick="addTask('office') ">Add Task</button>
+                        <ul class="tasks"></ul>
+                        <p class="party-bomb" style="display: none">🎉 Party Bomb! All tasks completed! 🎉</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- College Accordion Item -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                   <p class="cs">College</p> 
+                </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <div class="task-list" data-category="college">
+                        <input type="text" class="task-input" placeholder="Enter task" spellcheck="true">
+                        <button onclick="addTask('college')"><abbr title="Press the Button">Add Task</abbr> </button>
+                        <ul class="tasks"></ul>
+                        <p class="party-bomb" style="display: none">🎉 Party Bomb! All tasks completed! 🎉</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Personal Accordion Item -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                   <p class="cs"> Personal</p>
+                </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <div class="task-list" data-category="personal">
+                        <input type="text" class="task-input" placeholder="Enter task">
+                        <button onclick="addTask('personal')">Add Task</button>
+                        <ul class="tasks"></ul>
+                        <p class="party-bomb" style="display: none">🎉 Party Bomb! All tasks completed! 🎉</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <footer>
+        <p><code>Made with ❤️ from </code><a class="last" href="https://www.instagram.com/nanda._o7/"> <img src="assets/_INSTAGRAM_ICON_.gif"/></a></p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="script.js" charset="UTF-8"></script>
+
+</body>
+</html>
